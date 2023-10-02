@@ -94,25 +94,11 @@ function clickToAddCell(next_gen) {
         const cellX = Math.floor(mouseX / resolution);
         const cellY = Math.floor(mouseY / resolution);
 
-        /*
-        for (let i = 0; i < columns; i++) {
-            for (let j = 0; j < rows; j++) {
-                let state = grid[i][j];
-
-                if (state == 0) {
-                    next_gen[i][j] = 1;
-                } else if (state == 1) {
-                    next_gen[i][j] = 0;
-                }
-            }
+        if (next_gen[cellX][cellY] == 0) {
+            next_gen[cellX][cellY] = 1;
+        } else {
+            next_gen[cellX][cellY] = 0;
         }
-    });
-    */
-    if (next_gen[cellX][cellY] == 0) {
-        next_gen[cellX][cellY] = 1;
-    } else {
-        next_gen[cellX][cellY] = 0;
-    }
 
-});
+    });
 }
