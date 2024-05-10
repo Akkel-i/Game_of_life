@@ -150,7 +150,7 @@ function changeSpeed(speed) {
         frameRate(FPS);
     }
     if (speed == 2) {
-        FPS = 20;
+        FPS = 30;
         frameRate(FPS);
     }
     if (speed == 3) {
